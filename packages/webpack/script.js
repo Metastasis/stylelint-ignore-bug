@@ -7,17 +7,18 @@ function build() {
   const options = {
     appPath: root,
     buildDir: join(root, 'dist'),
-    webpackPath: join(root, 'packages/webpack')
+    webpackPath: join(root, 'packages/webpack'),
+    env: 'production'
   };
   const optionsProject1 = {
     ...options,
     buildDir: join(options.buildDir, 'project1'),
-    entry: join(options.appPath, 'packages/project1/src/App.jsx'),
+    entry: join(options.appPath, 'packages/project1/src/App.jsx')
   };
   const optionsProject2 = {
     ...options,
     buildDir: join(options.buildDir, 'project2'),
-    entry: join(options.appPath, 'packages/project2/src/App.jsx'),
+    entry: join(options.appPath, 'packages/project2/src/App.jsx')
   };
   const compiler = webpack([
     webpackConfig(optionsProject1),

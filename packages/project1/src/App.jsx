@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import styles from './App.css';
+import {root} from './App.css';
 
 function App() {
   return (
-    <div className={styles.root}>
+    <div className={root}>
       I'm app #1
     </div>
   );

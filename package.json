@@ -2,18 +2,13 @@
   "name": "stylelint-bug",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "build": "node ./packages/webpack/script.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
-    "lerna": "^4.0.0"
-  },
-  "dependencies": {
-    "react": "16.8.6",
-    "react-dom": "16.8.6"
+    "lerna": "4.0.0"
   }
 }
