@@ -5,12 +5,6 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "directories": {
-    "src": "src"
-  },
-  "files": [
-    "src"
-  ],
   "publishConfig": {
     "registry": "http://registry.npmjs.org/"
   },

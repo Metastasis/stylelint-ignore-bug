@@ -11,13 +11,18 @@ function build() {
   };
   const optionsProject1 = {
     ...options,
+    buildDir: join(options.buildDir, 'project1'),
     entry: join(options.appPath, 'packages/project1/src/App.jsx'),
   };
   const optionsProject2 = {
     ...options,
+    buildDir: join(options.buildDir, 'project2'),
     entry: join(options.appPath, 'packages/project2/src/App.jsx'),
   };
-  const compiler = webpack(webpackConfig(optionsProject2));
+  const compiler = webpack([
+    webpackConfig(optionsProject1),
+    webpackConfig(optionsProject2)
+  ]);
   compiler.run((err, stats) => onSuccess(err, stats, compiler));
 }
 

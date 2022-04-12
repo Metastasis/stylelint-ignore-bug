@@ -11,6 +11,7 @@ module.exports = (options) => {
     },
     resolve: {
       extensions: ['.js', '.jsx'],
+      modules: ['node_modules', join(options.webpackPath, 'node_modules')]
     },
     module: {
       rules: [
